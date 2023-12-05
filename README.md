@@ -12,7 +12,7 @@ This plugin contains no other functionality.
 
    ```sh
    # From your Backstage root directory
-   yarn add --cwd packages/app @albert-heijn-technology/plugin-analytics-module-azure-insights
+   yarn add --cwd packages/app @albert-heijn-technology/backstage-plugin-analytics-module-azure-insights
    ```
 
 2. Wire up the API implementation to your App:
@@ -24,7 +24,7 @@ This plugin contains no other functionality.
      configApiRef,
      identityApiRef,
    } from '@backstage/core-plugin-api';
-   import { AzureInsights } from '@albert-heijn-technology/plugin-analytics-module-azure-insights';
+   import { AzureInsights } from '@albert-heijn-technology/backstage-plugin-analytics-module-azure-insights';
 
    export const apis: AnyApiFactory[] = [
      // Instantiate and register the Azure Insights API Implementation.
