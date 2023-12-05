@@ -40,7 +40,7 @@
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
     "@microsoft/applicationinsights-web": "^3.0.5",
-    "react-use": "^17.4.0",
+    "react-use": "^17.4.2",
     "tslib": "^2.6.2"
   },
   "peerDependencies": {
