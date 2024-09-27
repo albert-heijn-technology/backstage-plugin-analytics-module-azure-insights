@@ -15,4 +15,3 @@
  */
 
 export { AzureInsights } from "./AnalyticsApi";
-export { analyticsModuleAzurePlugin } from "./plugin";
