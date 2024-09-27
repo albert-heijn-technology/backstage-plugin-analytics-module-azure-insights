@@ -1,0 +1,11 @@
+**/.git
+**/.svn
+**/.hg
+**/.eslintrc.js
+**/node_modules
+
+# Ignore generated files
+build
+coverage
+dist
+dist-types
