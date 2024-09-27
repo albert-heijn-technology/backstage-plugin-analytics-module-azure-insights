@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export * from "./AnalyticsApi";
 export { AzureInsights } from "./AnalyticsApi";
+export { analyticsModuleAzurePlugin } from "./plugin";
