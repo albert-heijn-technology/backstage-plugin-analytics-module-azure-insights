@@ -1,0 +1,10 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# Ignore generated files
+build
+coverage
+dist
+dist-types

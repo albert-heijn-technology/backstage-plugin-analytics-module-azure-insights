@@ -16,12 +16,13 @@
 
 import { createPlugin } from "@backstage/core-plugin-api";
 import { createDevApp } from "@backstage/dev-utils";
-import { Playground } from "./Playground";
 import React from "react";
+import { Playground } from "./Playground";
 
 export const analyticsModuleAzureInsights = createPlugin({
   id: "analytics-provider-azure-insights",
 });
+
 createDevApp()
   .registerPlugin(analyticsModuleAzureInsights)
   .addPage({
