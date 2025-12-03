@@ -36,7 +36,7 @@ export class AzureInsights implements AnalyticsApi {
 
   private constructor(options: {
     identityApi: IdentityApi;
-    azureConfig: AzureAnalyticsConfig;
+    azureConfig?: AzureAnalyticsConfig;
     azureSnippet?: Snippet;
   }) {
     const { identityApi, azureConfig, azureSnippet } = options;
@@ -62,7 +62,15 @@ export class AzureInsights implements AnalyticsApi {
     identityApi: IdentityApi,
     azureSnippet?: Snippet
   ) {
-    const azureConfig: AzureAnalyticsConfig = config.get("app.analytics.azure");
+    const azureConfig: AzureAnalyticsConfig | undefined = config.getOptional(
+      "app.analytics.azure"
+    );
+
+    if (!azureConfig) {
+      return {
+        captureEvent: () => {},
+      };
+    }
 
     return new AzureInsights({
       identityApi,
