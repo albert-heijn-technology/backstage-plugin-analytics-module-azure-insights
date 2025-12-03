@@ -1,3 +1,5 @@
+> This project is no longer maintained, feel free to fork the project.
+
 # Analytics Module: Azure Application Insights
 
 This plugin provides an opinionated implementation of the Backstage Analytics
